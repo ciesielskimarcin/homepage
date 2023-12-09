@@ -1,24 +1,45 @@
 body{
     background: #fefefe;
-}
-h1{
-    color: rgb(58, 58, 49);
-}
-h2{
-    color: #1460AA;
-}
-section{
-    background-color: rgb(235, 216, 163);
-}
-article{
-    background-color: rgb(201, 201, 233);
+    padding: 10px;
 }
 
-.article{
-    background-color: beige;
-    color: rgb(36, 39, 1);
-}
 
 .article a{
     color: inherit;
 }
+
+.navigation{
+    background-color: beige;
+}
+
+.navigation__link{
+ color: #5d5f5f;
+}
+
+.main{
+    background-color: bisque;
+    color: #5d5f5f;
+}
+
+.section{
+    background-color: lemonchiffon;
+    color: #5d5f5f;
+    font-style:normal;
+}
+
+.section_title--main{
+    color: #1f2020;
+    font-size: 0.75cm;
+    font: bold;
+}
+
+.article{
+    background-color: rgb(197, 197, 184);
+    color: darkslategray;
+}
+
+.article__paragraph{
+    background-color:antiquewhite;
+    color: darkslategray;
+}
+
