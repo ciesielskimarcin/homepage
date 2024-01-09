@@ -1,5 +1,7 @@
 body{
-    background: #fefefe;
+    /* background: #fefefe; */
+    background: rgb(2,0,36);
+    background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(208,182,53,1) 60%, rgba(255,226,0,1) 100%);
     padding: 10px;
 }
 
@@ -41,11 +43,16 @@ main{
 
 .navigation{
     position: sticky;
-    background-color: beige;
+    background-color: rgb(44, 43, 0);
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
 }
 
 .navigation__link{
- color: #5d5f5f;
+ color: #ecf3d3;
+ text-decoration: none;
 }
 
 .picture{
