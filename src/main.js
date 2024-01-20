@@ -6,7 +6,7 @@ console.log(`Nazywam sie ${firstName} i mam ${age} lata`);
 
 
 const p =document.querySelector('.article__paragraph--js')
-p.innerHTML=' '
+
 
 
 function welcome (name, age) 
@@ -17,3 +17,11 @@ function welcome (name, age)
 
 const result = welcome("darek", "23");
 console.log(welcome("Gnoj", 45));
+
+
+const hamburger= document.querySelector('.hamburger--js')
+
+hamburger.addEventListener('click', ()=> {
+    const navigation = document.querySelector('.navigation--js');
+    navigation.classList.toggle('navigation--open');
+})
