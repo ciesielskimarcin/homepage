@@ -1,0 +1,157 @@
+$textcolor: darkslategray;
+
+
+body {
+    /* background: #fefefe; */
+    background: #F9F7F0;
+    padding: 10px;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    min-height: 10rem;
+}
+
+.article a {
+    color: inherit;
+}
+
+.article {
+    background-color: antiquewhite;
+    color: $textcolor;
+    max-width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    &__header {
+        margin: 0;
+    }
+
+    &__header::after {
+        content: " 🔗";
+    }
+
+    &__paragraph {
+        background-color: antiquewhite;
+        color: $textcolor;
+    }
+
+    @media screen and (min-width:768px) {
+        color: hotpink;
+    }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    min-height: 50px;
+    background-color: #178CA4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main {
+    /* background-color: bisque; */
+    color: #5d5f5f;
+}
+
+.hamburger {
+    padding: 4px;
+    background: none;
+    border: 0;
+    font-size: 1.5rem;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.navigation {
+    background-color: #178CA4;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+
+    &__link {
+        color: #ecf3d3;
+        text-decoration: none;
+    }
+
+    &--open {
+        display: flex;
+    }
+
+    @media screen and (min-width:768px) {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 16px;
+    }
+
+}
+
+.picture {
+    /* margin: 10px auto; */
+    width: 225px;
+    height: 225px;
+}
+
+.section {
+    color: #5d5f5f;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__box {
+        background-color: antiquewhite;
+        color: $textcolor;
+        padding: 10px;
+        border-radius: 15px;
+        /* grid-area: 2 / 1 / 3 / 3; */
+    }
+
+    &_title {
+        &--main {
+            color: #1f2020;
+            font-size: 0.45cm;
+            font: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0%;
+            padding: 12px;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        &_title {
+            &--main {
+                font-size: 0.75cm;
+                align-items: flex-start;
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+}
