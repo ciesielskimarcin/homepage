@@ -1,0 +1,47 @@
+$textcolor: darkslategray;
+
+:root{
+    --textColor: darkslategray;
+    --boxBackgroundColor: antiquewhite;
+}
+
+.section {
+    color: #5d5f5f;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @media screen and (min-width:768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__box {
+        background-color: var(--boxBackgroundColor);
+        color: var(--textColor);
+        padding: 10px;
+        border-radius: 15px;
+        /* grid-area: 2 / 1 / 3 / 3; */
+    }
+
+    &_title {
+        &--main {
+            color: var(--textColor);
+            font-size: 0.45cm;
+            font: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0%;
+            padding: 12px;
+
+            @media screen and (min-width:768px) {
+
+                font-size: 0.75cm;
+                align-items: flex-start;
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+}

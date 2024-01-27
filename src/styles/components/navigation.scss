@@ -1,0 +1,38 @@
+.navigation {
+    background-color: #178CA4;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+
+    @media screen and (min-width:768px) {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 16px;
+    }
+
+    &__link {
+        color: #ecf3d3;
+        text-decoration: none;
+        &--button{
+            color: #ecf3d3;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0
+        }
+    }
+
+    
+
+    &--open {
+        display: flex;
+    }
+}

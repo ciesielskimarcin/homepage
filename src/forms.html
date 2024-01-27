@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Strona wtf</title>
-        <link href="normalize.css" rel="stylesheet" type="text/css">
-        <link href="styles/main.scss" rel="stylesheet" type="text/css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona wtf</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.scss" rel="stylesheet" type="text/css">
+</head>
+
 <body>
     <main>
         <header class="header">
@@ -23,23 +25,23 @@
                     <legend>Dane adresowe:</legend>
                     <p>
                         <label for="firstName">Imie</label>
-                        <input placeholder="imie" value="Marcin" id="firstName" type="text" name="firstName"/>
+                        <input placeholder="imie" value="Marcin" id="firstName" type="text" name="firstName" />
                     </p>
                     <p>
                         <label for="lastName">Nazwisko</label>
-                        <input placeholder="nazwisko" id="lastName" type="text" name="lastName"/>
+                        <input placeholder="nazwisko" id="lastName" type="text" name="lastName" />
                     </p>
                     <p>
                         <label for="phone">Telefon</label>
-                        <input placeholder="telefon" id="phone" type="number" name="phone"/>
+                        <input placeholder="telefon" id="phone" type="number" name="phone" />
                     </p>
                     <p>
                         <label for="email">Email</label>
-                        <input placeholder="email" id="email" type="email" name="email"/>
+                        <input placeholder="email" id="email" type="email" name="email" />
                     </p>
                     <p>
                         <label for="password">Haslo</label>
-                        <input type="password" id="password" name="password"/>
+                        <input type="password" id="password" name="password" />
                     </p>
                     <p>
                         <label for="software">Software</label>
@@ -47,60 +49,59 @@
                             <option selected>Tekla Structures</option>
                             <option>Revit</option>
                             <option>AutoCad</option>
-                        </select> 
+                        </select>
                     </p>
                     <p>
                         <label for="attachment">Attachment</label>
-                        <input id="attachment" type="file" name="attachment"/>
+                        <input id="attachment" type="file" name="attachment" />
                     </p>
                     <p>
                         <label for="favNumber">Number</label>
-                        <input type="range" min="0" max="100" step="20" id="favNumber"  name="favNumber"/>
+                        <input type="range" min="0" max="100" step="20" id="favNumber" name="favNumber" />
                     </p>
                 </fieldset>
                 <fieldset>
                     <legend>Dane adresowe:</legend>
                     <p>
                         <label for="street">Ulica</label>
-                        <input placeholder="ulica" id="street" type="text" name="street"/>
+                        <input placeholder="ulica" id="street" type="text" name="street" />
                     </p>
                     <p>
                         <label for="city">Miasto</label>
-                        <input placeholder="miasto" id="city" type="text" name="city"/>
+                        <input placeholder="miasto" id="city" type="text" name="city" />
                     </p>
                 </fieldset>
                 <fieldset>
                     <legend>Format modelu</legend>
                     <p>
-                        <label><input type="radio" name="tekla"/> Tekla</label>
+                        <label><input type="radio" name="tekla" /> Tekla</label>
                     </p>
                     <p>
-                        <label><input type="radio" name="revit"/> Revit</label>
+                        <label><input type="radio" name="revit" /> Revit</label>
                     </p>
                 </fieldset>
                 <fieldset>
                     <legend>Attachments</legend>
                     <p>
-                        <label><input type="checkbox" name="ifc"/> IFC</label>
+                        <label><input type="checkbox" name="ifc" /> IFC</label>
                     </p>
                     <p>
-                        <label><input type="checkbox" name="drawings"/> Drawings</label>
+                        <label><input type="checkbox" name="drawings" /> Drawings</label>
                     </p>
                 </fieldset>
                 <p>
                     <label for="comment">Comment</label></br>
-                    <textarea id="comment"  name="comment"></textarea>
+                    <textarea id="comment" name="comment"></textarea>
                 </p>
                 <p>
-                    <input type="submit"
-                    value="wyslij">
+                    <input type="submit" value="wyslij">
                 </p>
             </form>
         </section>
     </main>
-    
+
 </body>
 
-<script src="main.js"></script>
+<script type="module" src="js/main.js"></script>
 
 </html>

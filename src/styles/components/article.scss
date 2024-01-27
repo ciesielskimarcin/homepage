@@ -1,0 +1,29 @@
+:root{
+    --textColor: darkslategray;
+    --boxBackgroundColor: antiquewhite;
+}
+
+.article {
+    background-color: var(--boxBackgroundColor);
+    color: var(--textColor);
+    max-width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+
+    &__header {
+        margin: 0;
+
+        &::after {
+            content: " 🔗";
+        }
+    }
+
+    &__paragraph {
+        color: var(--textColor);
+    }
+
+    @media screen and (min-width:768px) {
+        color: var(--textColor);
+    }
+}
