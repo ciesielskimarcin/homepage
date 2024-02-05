@@ -1,5 +1,6 @@
 import { differenceInDays, subBusinessDays } from "date-fns";
 import {substactNumbers} from "./calculate";
+import { addNumbersInArray } from "./calculate";
 
 const firstName = "Marcin";
 const age = "33";
@@ -47,3 +48,12 @@ const resultDay = differenceInDays(
     document.documentElement.style.setProperty('--backgroundColor', '#DCFFB7');
     document.documentElement.style.setProperty('--textColor', '#FF6868')
   })
+
+
+  elements = [1,2,55,5,6,7];
+
+
+
+  const dupa = addNumbersInArray(elements);
+  console.log(dupa);
+
